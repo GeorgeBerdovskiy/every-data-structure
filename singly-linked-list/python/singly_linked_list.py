@@ -53,8 +53,6 @@ class SinglyLinkedList:
             for i in range(index - 1):
                 next_node = next_node.next_node
 
-            # Right now, next_node is the node before the ith node
-            # We want to link next_node to the one being added and link the one being added to the ith
             node_being_added = Node(val, next_node.next_node)
             next_node.next_node = node_being_added
         

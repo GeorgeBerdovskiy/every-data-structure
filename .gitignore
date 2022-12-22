@@ -1,1 +1,10 @@
+# Ignore anything without an extension
+*
+!*/
+!*.*
+
+# MacOS Files
 .DS_Store
+
+# Executables
+*.out
