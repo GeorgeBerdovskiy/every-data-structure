@@ -12,3 +12,8 @@ Implemented in (almost) every language!
 | ------------- | ------------- | ------------- |
 | C | ○ In Progress  | 𐄂 Not Started |
 | Rust | ○ In Progress  | 𐄂 Not Started |
+
+## Vector
+| Language | Implementation Status | Testing Status |
+| ------------- | ------------- | ------------- |
+| Rust | ○ In Progress  | ○ In Progress |
