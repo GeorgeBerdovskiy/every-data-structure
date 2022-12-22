@@ -3,11 +3,12 @@ Implemented in (almost) every language!
 
 ## Singly Linked List
 | Language | Implementation Status | Testing Status |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | Python  | ✓ Complete  | 𐄂 Not Started |
-| C | ᐧ In Progress  | 𐄂 Not Started |
+| C | ○ In Progress  | 𐄂 Not Started |
 
 ## Hash Table
 | Language | Implementation Status | Testing Status |
-| ------------- | ------------- |
-| C | ᐧ In Progress  | 𐄂 Not Started |
+| ------------- | ------------- | ------------- |
+| C | ○ In Progress  | 𐄂 Not Started |
+| Rust | ○ In Progress  | 𐄂 Not Started |
