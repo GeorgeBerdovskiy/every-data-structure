@@ -8,3 +8,9 @@
 
 # Executables
 *.out
+
+# Cargo / Rust
+debug/
+target/
+Cargo.lock
+**/*.rs.bk
