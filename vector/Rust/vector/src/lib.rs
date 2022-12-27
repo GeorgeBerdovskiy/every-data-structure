@@ -100,6 +100,26 @@ impl<T> Vector<T> {
 	}
 }
 
+impl <T>Drop for Vector<T> {
+	fn drop(&mut self) {
+		// Other way would be to iterate through and drop every item one by one
+		unsafe {
+			std::ptr::drop_in_place(std::slice::from_raw_parts_mut(
+				self.pointer.as_ptr(),
+				self.length
+			));
+
+			// Now we need to deallocate the heap memory
+			let layout = alloc::Layout::from_size_align_unchecked(
+				std::mem::size_of::<T>() * self.capacity, 
+				std::mem::align_of::<T>()
+			);
+
+			alloc::dealloc(self.pointer.as_ptr() as *mut u8, layout)
+		}
+	}
+}
+
 #[cfg(test)]
 mod tests {
 	use super::*;
