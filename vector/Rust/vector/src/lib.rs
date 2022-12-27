@@ -90,6 +90,17 @@ impl<T> Vector<T> {
 			self.capacity = new_capacity;
 		}
 	}
+	
+	pub fn get(&self, index: usize) -> Option<&T> {
+		if index >= self.length {
+			return None;
+		}
+
+		// Now we know that we aren't out of bounds
+		Some(unsafe {
+			&*self.pointer.as_ptr().add(index)
+		})
+	}
 
 	pub fn capacity(&self) -> usize {
 		self.capacity
@@ -133,6 +144,10 @@ mod tests {
 		vec.push(3);
 		vec.push(4);
 		vec.push(5);
+
+		for n in 0..vec.length() {
+			assert_eq!(vec.get(n), Some(&(n + 1)));
+		}
 
 		assert_eq!(vec.capacity(), 8);
 		assert_eq!(vec.length(), 5);
