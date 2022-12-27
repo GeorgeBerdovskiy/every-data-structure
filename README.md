@@ -1,5 +1,5 @@
 # Every Common Data Structure
-Implemented in (almost) every language!
+Implemented on a basic level in (almost) every language!
 
 ## Singly Linked List
 | Language | Implementation Status | Testing Status |
@@ -16,4 +16,4 @@ Implemented in (almost) every language!
 ## Vector
 | Language | Implementation Status | Testing Status |
 | ------------- | ------------- | ------------- |
-| Rust | ○ In Progress  | ○ In Progress |
+| Rust | ✓ Complete  | ✓ Complete |
